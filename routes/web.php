@@ -21,7 +21,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/user/create', 'UserController@index')->name('user/create');
+Route::get('/userview', 'UserController@index')->name('userview');
 Route::get('/listofforms', 'FormController@index')->name('listofforms');
 Route::get('/userforms', 'UserFormsController@index')->name('userforms');
+
+Route::resource('user','UserController');
 

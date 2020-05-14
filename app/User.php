@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+     /**
+     * The roles that belong to the user.
+     */
+    public function listofforms()
+    {
+        return $this->belongsToMany('App\ListofForms', 'user_forms', 'user_id', 'form_id' );
+    }
 }

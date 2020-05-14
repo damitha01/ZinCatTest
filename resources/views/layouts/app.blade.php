@@ -50,7 +50,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user/create') }}">{{ __('Create User') }}</a>
+                                <a class="nav-link" href="{{ route('userview') }}">{{ __('Create User') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('listofforms') }}">{{ __('List of Forms') }}</a>
@@ -82,6 +82,13 @@
         </nav>
 
         <main class="py-4">
+        <div class="error-block">
+            <div class="col-md-6 ">
+                @include('inc.messages')
+            </div>
+        
+        </div>
+            
             @yield('content')
         </main>
     </div>
