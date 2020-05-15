@@ -42,8 +42,7 @@ class UserController extends Controller
         $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
             'address' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'phone' => 'required|regex:/(01)[0-9]{9}/'
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users']
         ]);
         
         // Create user
@@ -82,8 +81,7 @@ class UserController extends Controller
         $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
             'address' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255'],
-            'phone' => 'required|regex:/(0)[0-9]{9}/'
+            'email' => ['required', 'string', 'email', 'max:255']
         ]);
         
         // Update user
