@@ -1,0 +1,65 @@
+/**
+*Page Section Block CSS
+*/
+.section-block {
+    margin: 15px auto;
+}
+
+.card-header {
+    background-color: #6d75ea;
+    color: #fff;
+}
+
+.form-block .form-col {
+    float: left;
+}
+
+.edit-section a.btn.btn-warning.editbtn {
+    float: left;
+    margin-right: 5px;
+}
+.data-view-table table thead tr {
+    background-color: rgba(52, 144, 220, 0.5);
+}
+
+.data-view-table table tbody tr:hover {
+    background-color: aliceblue;
+}
+
+.error-block {
+    width: 50%;
+    margin: auto;
+}
+
+
+select#forms {
+    height: 100px;
+}
+
+
+/**
+*Navbar CSS
+*/
+.navbar-block {
+    background-color: #3e4397;
+    color: #fff !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+a.nav-link {
+    color: #fff !important; 
+    border: 1px solid transparent;
+    margin: auto 5px;
+}
+
+a.nav-link:hover {
+    color: #fff !important;
+    border: 1px solid #fff; 
+    border-radius: 10px;
+}
+
+
+

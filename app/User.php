@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email','phone', 'address', 'password',
     ];
 
     /**
@@ -40,8 +40,8 @@ class User extends Authenticatable
      /**
      * The roles that belong to the user.
      */
-    public function listofforms()
+    public function forms()
     {
-        return $this->belongsToMany('App\ListofForms', 'user_forms', 'user_id', 'form_id' );
+        return $this->belongsToMany('App\Forms', 'user_forms', 'user_id', 'forms_id' );
     }
 }

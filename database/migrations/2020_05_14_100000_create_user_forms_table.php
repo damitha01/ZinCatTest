@@ -16,7 +16,7 @@ class CreateUserFormsTable extends Migration
         Schema::create('user_forms', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_id')->nullable();
-            $table->unsignedInteger('form_id')->nullable();
+            $table->unsignedInteger('forms_id')->nullable();
             $table->timestamps();
         });
     }
